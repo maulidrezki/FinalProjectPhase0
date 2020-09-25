@@ -24,3 +24,4 @@
 - AYO segera tangkap si Bug sebelum orang tua marah dan jika sudah maka tangkap lagi sampai akhir jaman huehuehuehue
 
 # BugDanResume
+- https://maulidrezki.github.io/FinalProjectPhase0/
