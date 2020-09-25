@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="style.css">
+
+    <title>Final Project - Maulid</title>
+</head>
+<body>
+    <!-- Pembagian agar bisa dipotong potong untuk styling nanti 
+    https://css-tricks.com/a-complete-guide-to-data-attributes/
+    ketemu trik
+    https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+    tapi gak disaranin kalau real case apa lagi kalau ada data yg sensitive, keliatan.
+  -->
+    <div class="card" data-state="#about">
+        <div class="card-header">
+            <div class="card-cover" style="background-image: url('backdrop.png')"></div>
+
+<!--https://www.w3schools.com/howto/howto_css_image_avatar.asp -->
+
+            <img class="card-avatar" src="profilePic.png" alt="avatar" />
+            <h1 class="card-fullname">Maulid Rezki</h1>
+            <h4 class="card-jobtitle" >Product Manager</h4>
+        </div>
+        <div class="card-main">
+            <div class="card-section is-active" id="about">
+                <div class="card-content">
+                    <div class="card-subtitle">ABOUT</div>
+                    <p class="card-desc">Untuk Final Project ini saya menggabungkan <strong>Online Resume</strong> dan game <strong>Bug Hacktiv8</strong>. Online Resume merupakan penggalan pengalaman kerja dan informasi untuk menghubungi saya. Game Bug Hacktiv bisa dijalankan dibagian CONTACT dan klik main game. Untuk menangkap Bug Hacktiv8 cukup tekan tombol apa saja di keyboard. Ingat juga, semakin lama kalian menangkap si Bug dendanya semakin besar, selamat bermain! Dan silahkan kalau Profile Cardnya mau dicopy atau clone.</p>
+                </div>
+
+                <!-- Untuk mengambil logo tanpa save image, pake Font Awesome / fa faaaaaaaaaaaa     di W3 https://www.w3schools.com/icons/fontawesome_icons_brand.asp-->
+
+                <div class="card-social" >
+                    <a href="https://github.com/maulidrezki" target="_blank">
+						<i class="fa fa-github" id="ikon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/maulidrezki/" target="_blank">
+						<i class="fa fa-linkedin-square" id="ikon"></i>
+                    </a>
+                    <a href="https://wa.me/62811631686" target="_blank">
+                        <i class="fa fa-whatsapp" id="ikon"></i>
+                    </a>
+                    <a href="RESUME_MAULID_REZKI_2020 .pdf" target="_blank">
+						<i class="fa fa-file-pdf-o" id="ikon"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Halaman about -->
+
+            <div class="card-section" id="experience">
+                <div class="card-content">
+                    <div class="card-subtitle">WORK EXPERIENCE</div>
+                    <div class="card-timeline">
+                        <div class="card-item" data-year="2020">
+                            <div class="card-item-title"><strong>Mahayana Permaculture</strong></div>
+                            <div class="card-item-desc">Director of Business Development and Monetization</div>
+                            <div class="card-item-title"><strong>Hacktiv8 Indonesia </strong></div>
+                            <div class="card-item-desc">Software Engineering Immersive Program - Full Stack Javascript</div>
+                            <div class="card-item-title"><strong>Amazon Web Services</strong></div>
+                            <div class="card-item-desc">AWS Certified Cloud Practitioner</div>
+                            <div class="card-item-title"><strong>University of Alberta</strong></div>
+                            <div class="card-item-desc">Software Product Management Specialization</div>
+
+                        </div>
+                        <div class="card-item" data-year="2016">
+                            <div class="card-item-title"> </i><strong>Facebook</strong></div> 
+                            <div class="card-item-desc">Product Data Integrity Specialist</div>
+                        </div>
+                        <div class="card-item" data-year="2015">
+                            <div class="card-item-title"><strong>Facebook</strong></div>
+                            <div class="card-item-desc">Online Operations Specialist</div>
+                        </div>
+                        <div class="card-item" data-year="2014">
+                            <div class="card-item-title" ><strong>Nimia</strong></div>
+                            <div class="card-item-desc">Media and Technical Sales Intern</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Halaman Contact -->
+
+            <div class="card-section" id="contact">
+                <div class="card-content">
+                    <div class="card-subtitle">CONTACT</div>
+                    <div class="card-contact-wrapper">
+                        <div class="card-contact">
+                            <i class="fa fa-map-marker" id="ikon"></i>
+								Tangerang Selatan, Indonesia
+                        </div>
+                        <div class="card-contact">
+                            <i class="fa fa-mobile" id="ikon"></i>(+62) 811-631686
+                        </div>
+                        <div class="card-contact">
+							<i class="fa fa-envelope-o" style="font-size:20px" id="ikon"></i>
+                    		maulid@maulidrezki.com
+                        </div>
+                        <a href=".\hacktivJump.html" target="_blank"><button class="hacktiv-jump" href>KLIK UNTUK MAIN BUG HACKTIV8</button></a>
+                    </div>
+                </div>
+            </div>
+             <!-- Direktori Buttons -->
+
+            <div class="card-buttons">
+                <button data-section="#about" class="is-active">ABOUT</button>
+                <button data-section="#experience">EXPERIENCE</button>
+                <button data-section="#contact">CONTACT</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menjalankan script -->
+    
+    <script type="text/javascript" src="js.js"></script>
+
+</body>
+</html>
